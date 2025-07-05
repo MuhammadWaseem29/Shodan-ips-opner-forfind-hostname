@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shodan Host Finder</title>
+  <style>
+    body {
+      background-color: #1e1e1e;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      padding: 15px;
+      width: 320px;
+    }
+
+    textarea {
+      width: 100%;
+      height: 150px;
+      background-color: #2c2c2c;
+      color: #fff;
+      border: 1px solid #555;
+      border-radius: 5px;
+      padding: 10px;
+      font-family: monospace;
+      white-space: pre;          /* ✅ KEY FIX */
+      overflow-wrap: normal;
+      word-wrap: normal;
+      resize: vertical;
+    }
+
+    button {
+      width: 100%;
+      margin-top: 10px;
+      padding: 10px;
+      background-color: #007acc;
+      color: white;
+      border: none;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #005fa3;
+    }
+  </style>
+</head>
+<body>
+  <h3>Paste IPs (1 per line)</h3>
+  <textarea id="ipInput" placeholder="1.1.1.1\n8.8.8.8\n..."></textarea>
+  <button id="openShodan">Open in Shodan</button>
+  <script src="popup.js"></script>
+</body>
+</html>

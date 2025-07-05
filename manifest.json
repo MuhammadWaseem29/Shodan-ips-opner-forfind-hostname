@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Shodan Host Finder",
+  "version": "1.1",
+  "description": "Open multiple Shodan host pages by pasting IPs.",
+  "permissions": ["tabs"],
+  "host_permissions": ["https://www.shodan.io/*"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
